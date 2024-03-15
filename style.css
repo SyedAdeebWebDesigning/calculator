@@ -1,0 +1,128 @@
+/* Styling for the body */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(
+		135deg,
+		#262626,
+		#000000
+	); /* Background gradient */
+	color: #ffffff; /* Text color */
+	font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Styling for the calculator container */
+.calculator {
+	width: 350px; /* Width of the calculator */
+	border: 1px solid #444; /* Border color and thickness */
+	border-radius: 8px; /* Border radius for rounded corners */
+	padding: 30px; /* Padding inside the calculator */
+	background-color: #333; /* Background color of the calculator */
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for a 3D effect */
+}
+
+/* Styling for the input field */
+.calculator input[type="text"] {
+	width: 100%; /* Input field width */
+	margin-bottom: -45px; /* Adjusting margin for alignment */
+	padding: 37px 10px; /* Padding inside the input field */
+	font-size: 24px; /* Font size */
+	border: none; /* No border */
+	border-radius: 8px; /* Border radius for rounded corners */
+	background-color: #555; /* Background color of the input field */
+	color: #ffffff; /* Text color */
+	text-align: right; /* Text alignment to the right */
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+	.calculator input[type="text"] {
+		font-size: calc(24px - 0.1vw); /* Responsive font size */
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.calculator input[type="text"] {
+		font-size: calc(24px - 0.2vw); /* Responsive font size */
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.calculator input[type="text"] {
+		font-size: calc(24px - 0.3vw); /* Responsive font size */
+	}
+}
+
+/* Styling for the calculator buttons */
+.calculator button {
+	width: 50px; /* Button width */
+	height: 50px; /* Button height */
+	padding: 15px; /* Padding inside the button */
+	font-size: 20px; /* Font size */
+	border-radius: 8px; /* Border radius for rounded corners */
+	border: none; /* No border */
+	cursor: pointer; /* Cursor style */
+	background-color: #f0f0f0; /* Button background color */
+	color: #ffffff; /* Text color */
+	transition: background-color 0.3s, box-shadow 0.3s; /* Transition effect */
+	box-shadow: 2px 2px 20px #191919, -2px -2px 20px #212121; /* Neumorphic box shadow */
+}
+
+/* Styling for button hover effect */
+.calculator button:hover {
+	background-color: #e0e0e0; /* Button background color on hover */
+}
+
+/* Styling for button focus */
+.calculator button:focus {
+	outline: none; /* Remove outline on focus */
+}
+
+/* Styling for button active state */
+.calculator button:active {
+	box-shadow: inset 6px 6px 12px #b8b8b8, inset -6px -6px 12px #ffffff; /* Neumorphic box shadow on button press */
+}
+
+/* Styling for button rows */
+.calculator .row {
+	margin-bottom: 10px; /* Margin between button rows */
+}
+
+/* Styling for primary buttons */
+.calculator button.btn-primary {
+	background-color: #ff9b20; /* Primary button background color */
+}
+
+/* Styling for hover effect on primary buttons */
+.calculator button.btn-primary:hover {
+	background-color: #ff8127; /* Primary button background color on hover */
+}
+
+/* Styling for secondary buttons */
+.calculator button.btn-secondary {
+	background-color: #6c757d; /* Secondary button background color */
+}
+
+/* Styling for hover effect on secondary buttons */
+.calculator button.btn-secondary:hover {
+	background-color: #5a6268; /* Secondary button background color on hover */
+}
+
+/* Styling for light buttons */
+.calculator button.btn-light {
+	background-color: #f8f9fa; /* Light button background color */
+	color: #000; /* Text color */
+}
+
+/* Styling for hover effect on light buttons */
+.calculator button.btn-light:hover {
+	background-color: #e2e6ea; /* Light button background color on hover */
+}
+
+/* Styling for the calculate button */
+.calculate {
+	width: 100%; /* Calculate button width */
+}
