@@ -18,6 +18,7 @@ body {
 .calculator {
 	width: 350px; /* Width of the calculator */
 	border: 1px solid #444; /* Border color and thickness */
+	margin: 0 auto; /* Center the calculator horizontally */
 	border-radius: 8px; /* Border radius for rounded corners */
 	padding: 30px; /* Padding inside the calculator */
 	background-color: #333; /* Background color of the calculator */
