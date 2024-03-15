@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			rel="stylesheet" />
+		<!-- Custom CSS -->
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="calculator">
+				<div style="margin: 0 0 30px 0">
+					<h6 style="text-align: center; color: #8e8e8e">
+						Syed Adeeb Calculator
+					</h6>
+					<input type="text" id="display" class="form-control mb-2" readonly />
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<button
+							class="btn btn-secondary btn-block"
+							onclick="clearDisplay()">
+							AC
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-secondary btn-block"
+							onclick="appendToDisplay('(')">
+							(
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-secondary btn-block"
+							onclick="appendToDisplay(')')">
+							)
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-primary btn-block"
+							onclick="appendToDisplay('/')">
+							/
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('7')">
+							7
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('8')">
+							8
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('9')">
+							9
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-primary btn-block"
+							onclick="appendToDisplay('*')">
+							*
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('4')">
+							4
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('5')">
+							5
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('6')">
+							6
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-primary btn-block"
+							onclick="appendToDisplay('-')">
+							-
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('1')">
+							1
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('2')">
+							2
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('3')">
+							3
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-primary btn-block"
+							onclick="appendToDisplay('+')">
+							+
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<button
+							class="btn btn-light btn-block"
+							onclick="appendToDisplay('0')">
+							0
+						</button>
+					</div>
+					<div class="col-3">
+						<button class="btn btn-primary btn-block" onclick="square()">
+							x²
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-primary btn-block"
+							onclick="appendToDisplay('.')">
+							.
+						</button>
+					</div>
+					<div class="col-3">
+						<button
+							class="btn btn-primary btn-block"
+							onclick="appendToDisplay('%')">
+							%
+						</button>
+					</div>
+				</div>
+				<div
+					class="row"
+					style="max-width: 100%; align-items: center; justify-content: center">
+					<div class="col">
+						<button
+							class="btn btn-primary btn-block calculate"
+							style="width: 113%"
+							onclick="calculate()">
+							=
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Custom JavaScript -->
+		<script src="app.js"></script>
+	</body>
+</html>
